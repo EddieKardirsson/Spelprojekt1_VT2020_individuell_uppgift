@@ -266,7 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c457dabdf40ae4e974b4ce3ea18ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadCanvas: {fileID: 0}
+  loadCanvas: {fileID: 3783833642923917555, guid: de54173547999f340b41ce2d8c4b1dfb,
+    type: 3}
   nextScene: Win
 --- !u!135 &72896738
 SphereCollider:
@@ -761,6 +762,13 @@ GameObject:
   - component: {fileID: 385793287}
   - component: {fileID: 385793289}
   - component: {fileID: 385793290}
+  - component: {fileID: 385793291}
+  - component: {fileID: 385793293}
+  - component: {fileID: 385793292}
+  - component: {fileID: 385793294}
+  - component: {fileID: 385793295}
+  - component: {fileID: 385793297}
+  - component: {fileID: 385793296}
   m_Layer: 0
   m_Name: Dialog
   m_TagString: Untagged
@@ -781,19 +789,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -58, y: 97}
+  scrollPos: {x: 287.0379, y: 222.9228}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.52000046
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 385793276}
+  selectedCommands:
+  - {fileID: 385793296}
   variables: []
   description: 
   stepPause: 0
@@ -847,7 +857,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 67
-    y: 48
+    y: 49.923077
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -857,6 +867,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 385793267}
   commandList:
+  - {fileID: 385793294}
+  - {fileID: 385793295}
   - {fileID: 385793284}
   - {fileID: 385793290}
   - {fileID: 385793286}
@@ -1083,6 +1095,8 @@ MonoBehaviour:
   - {fileID: 385793281}
   - {fileID: 385793288}
   - {fileID: 385793287}
+  - {fileID: 385793297}
+  - {fileID: 385793296}
 --- !u!114 &385793277
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1384,7 +1398,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &385793290
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1399,6 +1413,134 @@ MonoBehaviour:
   targetObject: {fileID: 326169602}
   methodName: DisableMovement
   delay: 0
+--- !u!114 &385793291
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385793263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 83
+    y: 138
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 22
+  blockName: Start Music
+  description: 
+  eventHandler: {fileID: 385793293}
+  commandList:
+  - {fileID: 385793292}
+--- !u!114 &385793292
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385793263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 23
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 66c7f031abbb6e9408ca2fa94b0810cf, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &385793293
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385793263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 385793291}
+  waitForFrames: 1
+--- !u!114 &385793294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385793263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 24
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: ef5b7599d4ca2bd4f99fffd51f362118, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 0
+--- !u!114 &385793295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385793263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 25
+  indentLevel: 0
+  volume: 0.524
+  fadeDuration: 0
+  waitUntilFinished: 1
+--- !u!114 &385793296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385793263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 27
+  indentLevel: 0
+  volume: 1
+  fadeDuration: 0
+  waitUntilFinished: 1
+--- !u!114 &385793297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385793263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 26
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 66c7f031abbb6e9408ca2fa94b0810cf, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 0
 --- !u!1 &464393156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3712,7 +3854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c457dabdf40ae4e974b4ce3ea18ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadCanvas: {fileID: 0}
+  loadCanvas: {fileID: 3783833642923917555, guid: de54173547999f340b41ce2d8c4b1dfb,
+    type: 3}
   nextScene: Lose
 --- !u!65 &1824493915
 BoxCollider:
@@ -4424,6 +4567,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3512710323547759984, guid: 57cfd2628468add46a8900991b8b32b4,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3512710323547759984, guid: 57cfd2628468add46a8900991b8b32b4,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3512710323547759984, guid: 57cfd2628468add46a8900991b8b32b4,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 3512710323547759985, guid: 57cfd2628468add46a8900991b8b32b4,
         type: 3}
