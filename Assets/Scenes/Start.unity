@@ -803,7 +803,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 385793276}
   selectedCommands:
-  - {fileID: 385793296}
+  - {fileID: 385793297}
   variables: []
   description: 
   stepPause: 0
@@ -1456,7 +1456,7 @@ MonoBehaviour:
   musicClip: {fileID: 8300000, guid: 66c7f031abbb6e9408ca2fa94b0810cf, type: 3}
   atTime: 0
   loop: 1
-  fadeDuration: 1
+  fadeDuration: 0
 --- !u!114 &385793293
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1473,7 +1473,7 @@ MonoBehaviour:
   waitForFrames: 1
 --- !u!114 &385793294
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1491,7 +1491,7 @@ MonoBehaviour:
   fadeDuration: 0
 --- !u!114 &385793295
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1508,7 +1508,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &385793296
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1525,7 +1525,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &385793297
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
