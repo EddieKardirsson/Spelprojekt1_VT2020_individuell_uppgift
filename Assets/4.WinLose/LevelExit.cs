@@ -24,6 +24,7 @@ public class LevelExit : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
+            InactivatePlayerColliderAndPhysics(other);
             StartCoroutine(LoadNextScene());
         }
     }
@@ -32,11 +33,23 @@ public class LevelExit : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
+            InactivatePlayerColliderAndPhysics(other);
             StartCoroutine(LoadNextScene());
         }
     }
 
-    private IEnumerator LoadNextScene(){
+    private static void InactivatePlayerColliderAndPhysics(Collision other){
+        var rigidbody = other.gameObject.GetComponent<Rigidbody>();
+        rigidbody.isKinematic = true;
+        rigidbody.detectCollisions = false;
+    }
+    private static void InactivatePlayerColliderAndPhysics(Collider other){
+        var rigidbody = other.gameObject.GetComponent<Rigidbody>();
+        rigidbody.isKinematic = true;
+        rigidbody.detectCollisions = false;
+    }
+
+    public IEnumerator LoadNextScene(){
         Instantiate(loadCanvas);
         yield return new WaitForSecondsRealtime(delayTime);
         SceneManager.LoadScene(nextScene);

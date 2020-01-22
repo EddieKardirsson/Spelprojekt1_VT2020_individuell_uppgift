@@ -24,24 +24,24 @@ public class CoinPickup : MonoBehaviour
 
     private void SetCoinPosition(float movementSpeed, float movementHeight){
         coinMesh.transform.localPosition = new Vector3(
-            coinMesh.position.x,
-            Mathf.Sin(Time.time * movementSpeed),
-            coinMesh.position.z) * movementHeight;
+            /*coinMesh.position.x*/ 0f,
+            coinMesh.position.y + Mathf.Sin(Time.time * movementSpeed),
+            /*coinMesh.position.z*/ 0f) * movementHeight;
     }
 
     private void AlignLocalPositions(){
-        pickupSound.transform.localPosition = pickupEffect.transform.localPosition = coinMesh.transform.localPosition;
+         pickupSound.transform.localPosition = pickupEffect.transform.localPosition = coinMesh.transform.localPosition;
     }
 
-    private void OnTriggerEnter(Collider other){
-        if (other.gameObject.tag == "Player" && coinMesh.gameObject.activeInHierarchy) {
-            GameLogic.CoinPickup();
-            coinMesh.gameObject.SetActive(false);
-            TriggerEvents();
-        }
-    }
+    //private void OnTriggerEnter(Collider other){
+    //    if (other.gameObject.tag == "Player" && coinMesh.gameObject.activeInHierarchy) {
+    //        GameLogic.CoinPickup();
+    //        coinMesh.gameObject.SetActive(false);
+    //        TriggerEvents();
+    //    }
+    //}
 
-    private void TriggerEvents(){
+    public void TriggerEvents(){
         pickupEffect.Play();
         pickupSound.Play();
     }
