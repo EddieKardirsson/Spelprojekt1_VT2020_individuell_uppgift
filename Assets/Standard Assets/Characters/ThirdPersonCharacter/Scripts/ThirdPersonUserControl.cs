@@ -15,6 +15,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         Rigidbody rgb;
         public float cheatSpeed;
 
+        private bool isInConvo = false;
+
         private void Start()
         {
 
@@ -39,6 +41,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
+            
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
@@ -49,6 +52,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         // Fixed update is called in sync with physics
         private void FixedUpdate()
         {
+            
             // read inputs
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
@@ -88,7 +92,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 }
                 
             }
-        }
-           
+        }        
     }
 }
