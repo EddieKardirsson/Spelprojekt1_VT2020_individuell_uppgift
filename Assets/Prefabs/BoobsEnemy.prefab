@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1752932705472370384}
   - component: {fileID: 3992167976876446767}
   m_Layer: 0
-  m_Name: BoobEnemy
+  m_Name: BoobsEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 1752932706206336520}
   - component: {fileID: 1752932706206336521}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 7920021715974623265}
   - component: {fileID: 7789836826949420205}
   m_Layer: 0
-  m_Name: Enemy (1)
+  m_Name: Right Boob
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 7793160583257596447}
   - component: {fileID: 7902189422050292777}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Right Nipple
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 8458047225833457015}
   - component: {fileID: 8400228945220833787}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Left Boob
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 8407739643887433545}
   - component: {fileID: 8440488435460612479}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Left Nipple
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
